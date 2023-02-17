@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="grădiniță, Enichioi, grădinița Enichioi, copii, copiii, educatori, investiții a grădiniței, înscriere la grădiniță, Ababi Viorica, satul Enichioi, investiții în Enichioi, investiții din satul Enichioi">
+    <meta name="description"
+        content="Acest site informează pe toți cei interesați despre instituția de educație timpurie „Enichioi” din satul Enichioi, oferind informații despre cadrele didactice, orar de activitate, activități cu copiii.">
+    <meta name="author" content="Caspirovschi Dașa, Știrbu Livia">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
+    <title>Grădinița Enichioi</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="../images/logo.jpg">
+        <h1 class="titlu">Grădinița Enichioi</h1>
+
+
+        <nav>
+            <a href="../index.html">Acasă</a>
+            <a href="despre.html">Despre</a>
+            <a href="orarul activitatii.html">Orarul activității</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+        <i id="hamburger" onclick="mobileMenu()"  class="fa-solid fa-bars"></i>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <div class="row">
+
+                <div class="col-50">
+
+                    <img class="program" src="../images/program.png">
+
+                    <table class="tabel" border="2" cellspacing="5px" cellpadding="2px">
+
+                        <caption>Programul de activitate</caption>
+
+                        <tr>
+                            <th>Ora</th>
+                            <th>Activitatea</th>
+                        </tr>
+
+                        <tr>
+                            <td>7:45-8:45</td>
+                            <td>Primirea copiilor</td>
+                        </tr>
+
+                        <tr>
+                            <td>9:00-9:20</td>
+                            <td>Dejunul</td>
+                        </tr>
+
+                        <tr>
+                            <td>9:20-10:00</td>
+                            <td>Pregătirea pentru activități</td>
+                        </tr>
+
+                        <tr>
+                            <td>10:00-10:50</td>
+                            <td>Activități</td>
+                        </tr>
+
+                        <tr>
+                            <td>11:00-11:40</td>
+                            <td>Jocuri pe teren</td>
+                        </tr>
+
+                        <tr>
+                            <td>11:50-12:20</td>
+                            <td>Prânzul</td>
+                        </tr>
+
+                        <tr>
+                            <td>12:30-15:15</td>
+                            <td>Ora de somn</td>
+                        </tr>
+
+                        <tr>
+                            <td>15:30-16:15</td>
+                            <td>Jocuri pentru copii</td>
+                        </tr>
+
+                        <tr>
+                            <td>16:30-16:50</td>
+                            <td>Gustarea</td>
+                        </tr>
+
+                        <tr>
+                            <td>17:00</td>
+                            <td>Copiii pleacă acasă</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="col-50">
+
+                    <h1>Manifestări artistice anuale</h1>
+
+                    <img class="activitati" src="../images/manifestari.jpg">
+
+                    <ul>
+                        <li>Ziua Mărțișorului</li>
+                        <li>8 Martie</li>
+                        <li>Adio Grădiniță</li>
+                        <li>Ziua Copiilor</li>
+                        <li>Ziua Bunicuțelor</li>
+                        <li>Toamna De Aur</li>
+                        <li>Anul Nou</li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr />
+
+        <section>
+
+            <div>
+
+                <form>
+                    <fieldset>
+                        <legend>Formular de înscriere</legend>
+
+                        <label for="nume">Nume, Prenume*</label> <br />
+                        <input placeholder="Ex: Popescu Ion" type="text" id="nume" required> <br />
+
+                        <label for="data">Data nașterii*</label> <br />
+                        <input id="data" type="date" required> <br />
+
+                        Gen* <br />
+
+                        <label for="feminin">Feminin</label> <br />
+                        <input type="radio" name="gen" id="feminin" checked required> <br />
+                        <label for="masculin">Masculin</label> <br />
+                        <input type="radio" name="gen" id="masculin"> <br />
+
+                        <label for="grupa">Grupa*</label> <br />
+                        <select id="grupa" required>
+                            <option disabled selected>Selctează grupa</option>
+                            <option>Grupa Mică</option>
+                            <option>Grupa Mijlocie</option>
+                            <option>Grupa Pregătitoare</option>
+                        </select> <br />
+
+                        <label for="email">Adresa de e-mail*</label> <br />
+                        <input type="email" id="email" required> <br />
+
+                        <label for="telefon">Telefon*</label> <br />
+                        <input id="telefon" type="tel"> <br />
+                        <br />
+
+                        <input type="submit" value="Transmite">
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <span>Grădinița Enichioi 2023</span>
+
+    </footer>
+
+</body>
+
+</html>

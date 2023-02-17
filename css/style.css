@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Alegreya';
+    font-size: 18px;
+}
+
+header {
+    background-color: hsl(214, 41%, 78%);
+    position: fixed;
+    width: 100%;
+    padding: 10px 10px;
+    top: 0;
+    z-index: 5;
+    height: 17vh;
+    font-family: 'Lobster';
+}
+
+main {
+    margin-top: 30px;
+    padding-top: 7%;
+    font-family: 'Alegreya';
+    min-height: 100vh;
+}
+
+nav {
+    margin-bottom: 10px;
+    display: inline;
+}
+
+nav a {
+    color: rgb(15, 81, 169);
+    margin-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Lobster';
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(32, 10, 125);
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: rgb(104, 31, 96);
+    font-family: 'Lobster';
+}
+
+table {
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 7%;
+    font-size: 18px;
+    font-family: 'Alegreya';
+}
+
+caption {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: hsl(214, 41%, 78%);
+    color: rgb(104, 31, 96);
+}
+
+ul {
+    list-style-image: url("../images/bifa.png");
+    font-family: 'Alegreya';
+}
+
+li {
+    margin-left: 20%;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+form {
+    margin-left: 25%;
+    font-size: 18px;
+    font-family: 'Alegreya';
+    width: 50%;
+    background-color: hsl(241, 100%, 91%);
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+
+legend {
+    font-size: 26px;
+    text-align: center;
+}
+
+input,
+option {
+    width: 100%;
+}
+
+iframe {
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+
+hr {
+    color: blue;
+}
+
+footer {
+    background-color: hsl(214, 41%, 78%);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+    color: rgb(104, 31, 96);
+}
+
+.logo {
+    width: 65px;
+    float: left;
+    margin-right: 30px;
+}
+
+
+.titlu {
+    text-align: left;
+    font-size: 30px;
+}
+
+.main {
+    margin-top: 0;
+}
+
+.acasa {
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+.index {
+    text-align: center;
+}
+
+.index h1 {
+    position: absolute;
+    bottom: 30%;
+    font-size: 500%;
+    border: 2px solid white;
+    margin-left: 30%;
+    background-color: hsla(214, 41%, 78%, 0.377);
+    border-radius: 5%;
+    text-align: center;
+}
+
+.index a {
+    bottom: 7%;
+    position: absolute;
+    font-size: 25px;
+    color: hsl(214, 41%, 78%);
+}
+
+.index a:hover {
+    color: hsl(214, 28%, 62%);
+}
+
+.despre {
+    margin: 0px 10% 5% 10%;
+}
+
+.despre img {
+    float: right;
+    width: 40%;
+    padding-left: 5%;
+    margin-top: 6.2%;
+}
+
+.localizare {
+    width: 100%;
+}
+
+.localizare p {
+    margin-left: 10%;
+}
+
+.row {
+    margin: 15px 0px 0px 0px;
+}
+
+.col-50 {
+    display: inline-block;
+    width: 35%;
+    vertical-align: bottom;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.tabeld {
+    width: 80%;
+    margin-bottom: 3%;
+}
+
+.angajati {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 340px;
+}
+
+.program {
+    margin-top: 10%;
+    margin-bottom: -5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activitati {
+    float: left;
+    width: 45%;
+    margin-right: 15%;
+    height: 350px;
+}
+
+.contacte {
+    width: 60%;
+    margin: 5% 20% 2% 20%;
+}
+
+.lista p {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.col-40 {
+    display: inline-block;
+    width: 35%;
+    overflow: auto;
+    margin-left: 10%;
+}
+
+.col-60 {
+    display: inline-block;
+    width: 40%;
+    overflow: auto;
+    margin-left: 10%;
+}
+
+.director {
+    width: 30%;
+    float: left;
+    margin: 4% 2% 0% 3%;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.viorica {
+    border: 1px solid black;
+    width: 99%;
+    position: relative;
+    background-color: hsla(214, 41%, 78%, 0.485);
+    border-radius: 20px;
+    margin-bottom: 3%;
+    height: 350px;
+}
+
+.viorica p {
+    padding: 0 12px;
+}
+
+.viorica a {
+    padding-left: 12px;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    gap: 25px;
+    border: 2px solid rgb(104, 31, 96);
+    margin: 5% 1%;
+    background-color: hsla(214, 41%, 78%, 0.485);
+    padding: 2%;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.galerie img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: linear 1s;
+}
+
+.galerie img:hover {
+    width: 220px;
+    height: 102%;
+    filter: brightness(100%);
+}
+
+.nou {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.bani {
+    border: 1px solid black;
+    width: 99%;
+    position: relative;
+    background-color: rgba(104, 31, 96, 0.19);
+    border-radius: 20px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#hamburger {
+    color:  white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+    width: 24px;
+    height: 20px;
+}
+
+@media (max-width: 1100px) {
+    main {
+        margin-top: 10%;
+    }
+
+    table {
+        margin-bottom: 15px;
+        padding: 2px;
+        margin: 0;
+        line-height: 100%;
+        width: 90%;
+        font-size: 14px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 5px;
+        height: 30%;
+    }
+
+    nav {
+        margin-bottom: 6px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    caption {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    li {
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    form {
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    footer {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .program {
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    .index h1 {
+        margin-left: 20%;
+        font-size: 400%;
+    }
+
+    .viorica {
+        height: 380px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        margin-top: 13%;
+    }
+
+    table {
+        margin-bottom: 13px;
+        padding: 1px;
+        margin: 0;
+        line-height: 100%;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 1px;
+        height: 17vh;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 14px;
+        color: black;
+        text-shadow: 1px 1px blue ;
+        line-height: 60%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    caption {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    li {
+        font-size: 13px;
+        line-height: 32px;
+    }
+
+    form {
+        display: block;
+        font-size: 14px;
+        margin-top: 22px;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    footer {
+        padding-top: 8px;
+        font-size: 12px;
+    }
+
+    .program {
+        margin-bottom: 0;
+        margin-top: 15%;
+    }
+
+    .index h1 {
+        margin-left: 10%;
+        font-size: 350%;
+    }
+
+    .index a {
+        margin-left: -18%;
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .despre {
+        display: block;
+        margin-top: 14%;
+    }
+
+    .despre img {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .col-40,
+    .col-60,
+    .col-50 {
+        display: block;
+        width: 80%;
+    }
+
+    .col-50 {
+        padding-top: 10px;
+    }
+
+    .viorica {
+        height: 250px;
+    }
+
+    .tabeld {
+        width: 100%;
+    }
+
+    .activitati {
+        height: 200px;
+    }
+
+    .foto {
+        margin-top: 20%;
+    }
+
+    .contacte {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
