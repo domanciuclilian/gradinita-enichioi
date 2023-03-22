@@ -136,25 +136,24 @@
 
             <div>
 
-                <form>
+                <form id="formular" method="POST" action="https://sheetdb.io/api/v1/lfw0j77le0bv7">
                     <fieldset>
                         <legend>Formular de înscriere</legend>
 
                         <label for="nume">Nume, Prenume*</label> <br />
-                        <input placeholder="Ex: Popescu Ion" type="text" id="nume" required> <br />
+                        <input  placeholder="Ex: Popescu Ion" type="text" id="nume" required name="data[nume]"> <br />
 
                         <label for="data">Data nașterii*</label> <br />
-                        <input id="data" type="date" required> <br />
+                        <input id="data" type="date" required name="data[data]"> <br />
 
                         Gen* <br />
-
-                        <label for="feminin">Feminin</label> <br />
-                        <input type="radio" name="gen" id="feminin" checked required> <br />
-                        <label for="masculin">Masculin</label> <br />
-                        <input type="radio" name="gen" id="masculin"> <br />
+                        <label for="feminin">Feminin</label>
+                        <input class="radio" type="radio" id="feminin" checked required name="data[feminin]"> <br />
+                        <label for="masculin">Masculin</label> 
+                        <input class="radio" type="radio" id="masculin" name="data[masculin]"> <br />
 
                         <label for="grupa">Grupa*</label> <br />
-                        <select id="grupa" required>
+                        <select id="grupa" required name="data[grupa]">
                             <option disabled selected>Selctează grupa</option>
                             <option>Grupa Mică</option>
                             <option>Grupa Mijlocie</option>
@@ -162,10 +161,10 @@
                         </select> <br />
 
                         <label for="email">Adresa de e-mail*</label> <br />
-                        <input type="email" id="email" required> <br />
+                        <input type="email" id="email" required name="data[email]"> <br />
 
                         <label for="telefon">Telefon*</label> <br />
-                        <input id="telefon" type="tel"> <br />
+                        <input id="telefon" type="tel" name="data[telefon]"> <br />
                         <br />
 
                         <input type="submit" value="Transmite">
@@ -185,6 +184,20 @@
         <span>Grădinița Enichioi 2023</span>
 
     </footer>
+
+    <script>
+        var form = document.getElementById('formular');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("formular")),
+            }).then(() => {
+                alert("Multumesc !");
+                form.reset();
+            });
+        });
+    </script>
 
 </body>
 

@@ -90,6 +90,7 @@ form {
     background-color: hsl(241, 100%, 91%);
     margin-top: 40px;
     margin-bottom: 5%;
+    text-align: left;
 }
 
 legend {
@@ -154,10 +155,15 @@ footer {
     bottom: 30%;
     font-size: 500%;
     border: 2px solid white;
-    margin-left: 30%;
     background-color: hsla(214, 41%, 78%, 0.377);
     border-radius: 5%;
     text-align: center;
+}
+
+#index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .index a {
@@ -165,6 +171,12 @@ footer {
     position: absolute;
     font-size: 25px;
     color: hsl(214, 41%, 78%);
+}
+
+#link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .index a:hover {
@@ -192,6 +204,7 @@ footer {
 
 .row {
     margin: 15px 0px 0px 0px;
+    width: 100%;
 }
 
 .col-50 {
@@ -203,8 +216,9 @@ footer {
 }
 
 .tabeld {
-    width: 80%;
+    width: 60%;
     margin-bottom: 3%;
+    margin-left: 28%;
 }
 
 .angajati {
@@ -248,9 +262,9 @@ footer {
 
 .col-60 {
     display: inline-block;
-    width: 40%;
+    width: 50%;
     overflow: auto;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 .director {
@@ -268,7 +282,7 @@ footer {
     background-color: hsla(214, 41%, 78%, 0.485);
     border-radius: 20px;
     margin-bottom: 3%;
-    height: 350px;
+    height: 335px;
 }
 
 .viorica p {
@@ -324,8 +338,12 @@ footer {
     text-align: center;
 }
 
+.radio {
+    width: 10%;
+}
+
 #hamburger {
-    color:  white;
+    color: white;
     font-size: 28px;
     position: absolute;
     right: 22px;
@@ -444,10 +462,14 @@ footer {
     nav.mobile a {
         display: block;
         text-align: center;
-        margin-top: 14px;
         color: black;
-        text-shadow: 1px 1px blue ;
+        text-shadow: 1px 1px blue;
         line-height: 60%;
+        border: 10px solid hsla(214, 41%, 78%, 0);
+        background-color: hsla(214, 41%, 78%, 0.666);
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
     }
 
     h1 {
@@ -472,6 +494,9 @@ footer {
         display: block;
         font-size: 14px;
         margin-top: 22px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     legend {
@@ -489,18 +514,19 @@ footer {
     }
 
     .index h1 {
-        margin-left: 10%;
+        margin-left: 0;
         font-size: 350%;
     }
 
     .index a {
-        margin-left: -18%;
+        margin-left: 0;
     }
 
     .logo {
         margin-left: 10px;
         margin-top: 10px;
         margin-right: 15px;
+        width: 45px;
     }
 
     .despre {
@@ -520,6 +546,11 @@ footer {
         width: 80%;
     }
 
+    .col-60 {
+        width: 80%;
+        margin-left: 10%;
+    }
+
     .col-50 {
         padding-top: 10px;
     }
@@ -530,6 +561,8 @@ footer {
 
     .tabeld {
         width: 100%;
+        margin-left: 0;
+
     }
 
     .activitati {
@@ -542,9 +575,17 @@ footer {
 
     .contacte {
         width: 80%;
-        margin-left: 10%;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 11px;
         margin-bottom: 10px;
+    }
+
+    #index,
+    #link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     #hamburger {
